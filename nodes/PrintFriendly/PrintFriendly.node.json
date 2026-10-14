@@ -1,0 +1,21 @@
+{
+	"node": "n8n-nodes-printfriendly.printFriendly",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/printfriendly/n8n-nodes-printfriendly#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/printfriendly/n8n-nodes-printfriendly#readme"
+			},
+			{
+				"url": "https://www.printfriendly.com/api/instructions/v2"
+			}
+		]
+	}
+}

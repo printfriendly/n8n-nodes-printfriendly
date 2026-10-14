@@ -1,0 +1,4 @@
+dist
+node_modules
+live-check-output
+.n8n-node-cli
