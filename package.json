@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-printfriendly",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for the PrintFriendly API: turn web pages, HTML and Markdown into PDF, Word, Markdown, JSON, HTML or plain text.",
 	"license": "MIT",
 	"homepage": "https://www.printfriendly.com/api/instructions/v2",
