@@ -3,19 +3,21 @@
 	"version": "0.1.0",
 	"description": "n8n community node for the PrintFriendly API: turn web pages, HTML and Markdown into PDF, Word, Markdown, JSON, HTML or plain text.",
 	"license": "MIT",
-	"homepage": "https://www.printfriendly.com/api",
+	"homepage": "https://www.printfriendly.com/api/instructions/v2",
 	"keywords": [
 		"n8n-community-node-package",
+		"n8n",
 		"printfriendly",
 		"pdf",
 		"docx",
 		"markdown",
 		"html-to-pdf",
-		"web-to-pdf"
+		"web-to-pdf",
+		"web-to-markdown"
 	],
 	"author": {
-		"name": "Blaine Vess",
-		"email": "blaine@printfriendly.com"
+		"name": "PrintFriendly",
+		"email": "support@printfriendly.com"
 	},
 	"repository": {
 		"type": "git",
@@ -24,6 +26,9 @@
 	"bugs": {
 		"url": "https://github.com/printfriendly/n8n-nodes-printfriendly/issues"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"build": "n8n-node build",
 		"build:watch": "tsc --watch",
@@ -31,12 +36,13 @@
 		"lint": "n8n-node lint",
 		"lint:fix": "n8n-node lint --fix",
 		"test": "n8n-node build && node --test test/*.test.mjs",
-		"release": "n8n-node release",
-		"prepublishOnly": "n8n-node prerelease"
+		"prepublishOnly": "npm run lint && npm run build"
 	},
 	"files": [
 		"dist",
-		"!dist/tsconfig.tsbuildinfo"
+		"!dist/tsconfig.tsbuildinfo",
+		"README.md",
+		"LICENSE.md"
 	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
@@ -52,7 +58,6 @@
 		"@n8n/node-cli": "*",
 		"eslint": "9.32.0",
 		"prettier": "3.6.2",
-		"release-it": "^21.1.0",
 		"typescript": "5.9.2"
 	},
 	"peerDependencies": {

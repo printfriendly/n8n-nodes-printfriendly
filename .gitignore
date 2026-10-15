@@ -1,4 +1,18 @@
-dist
-node_modules
-live-check-output
-.n8n-node-cli
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Packed tarballs and generated PDFs (npm pack, live-check, manual tests)
+*.tgz
+*.pdf
+
+# Local output and tooling
+live-check-output/
+.n8n-node-cli/
+.env
+.env.*
+!.env.example
+.DS_Store
